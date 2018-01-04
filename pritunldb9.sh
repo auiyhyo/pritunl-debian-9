@@ -31,9 +31,11 @@ ufw allow 22,80,81,222,443,8080,9700,60000/tcp
 ufw allow 22,80,81,222,443,8080,9700,60000/udp
 yes | ufw enable
 
+clear
+
 # อ่านนิดนึง
 echo "============#######==============="
-clear
+echo "xxxxxxxxxxxx I NA HEE xxxxxxxxxxxx"
 echo "ไม่เหมาะสำหรับมึงหรอก"
 echo "ใช้กับ Debian 9 x64 "
 echo "มัดรวม แบบ กรึ่งออโต้ by ....ใครวะ"
