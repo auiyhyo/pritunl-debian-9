@@ -11,7 +11,7 @@ apt-get install dirmngr
 ln -fs /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 # ติดตั้ง Pritunl mongodb server 
-echo "http://repo.pritunl.com/stable/apt stretch main" > /etc/apt/sources.list.d/pritunl.list
+tee -a /etc/apt/sources.list.d/pritunl.list << EOF deb http://repo.pritunl.com/stable/apt stretch main EOF
 apt-key adv --keyserver hkp://keyserver.ubuntu.com --recv 7568D9BB55FF9E5287D586017AE645C0CF8E292A
 apt-get update
 apt-get --assume-yes install pritunl mongodb-server
